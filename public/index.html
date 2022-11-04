@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style_chat.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <title>UCPChat | Lobby</title>
+  </head>
+
+  <body>
+    <script src="lib/token.js"></script>
+    <div class="sidebar">
+      <div class="logo-details">
+        <i class="bx bxs-chat icon"></i>
+        <div class="logo_name">Chat UCP 2021</div>
+        <i class="bx bx-menu" id="btn"></i>
+      </div>
+      <ul class="nav-list">
+        <li>
+          <i class="bx bx-search"></i>
+          <input type="text" placeholder="Buscar..." />
+          <span class="tooltip">Buscar</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-hash"></i>
+            <span class="links_name">UCP Canal Principal</span>
+          </a>
+          <span class="tooltip">UCP Canal Principal</span>
+        </li>
+        <!--
+        <li>
+          <a href="nuevo-canal">
+            <i class="bx bx-dots-horizontal-rounded"></i>
+            <span class="links_name">Nuevo canal</span>
+          </a>
+          <span class="tooltip">Nuevo canal</span>
+        </li>
+        -->
+        <li class="profile">
+          <div class="profile-details">
+            <i class="bx bxs-user-circle img-profile"></i>
+            <!-- <img src="profile.jpg" alt="profileImg"> -->
+            <div class="name">
+              <div class="name">User</div>
+            </div>
+          </div>
+          <i class="bx bx-log-out" id="log_out"></i>
+        </li>
+      </ul>
+    </div>
+    <section class="home-section">
+
+      <div id="canal_title" class="text">UCP Canal Principal</div>
+
+      <div class="inbox__messages">
+        <div class="messages__history"></div>
+        <div class="fallback"></div>
+      </div>
+
+      <form class="message_form">
+        <input
+          type="text"
+          class="message_form__input"
+          placeholder="Enviar mensaje a #Canal1"
+          autofocus
+        />
+        <button class="bx bxs-send" type="submit"></button>
+      </form>
+
+    </section>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="lib/chat.js"></script>
+  </body>
+</html>

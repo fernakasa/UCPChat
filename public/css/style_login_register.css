@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    background: #14141c;
+    background-size: cover;
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+}
+
+.login-box {
+    width: 400px;
+    height: 500px;
+    background: #e4ecf4;
+    color: black;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 70px 30px;
+}
+
+.login-box .avatar {
+    height: 90px;
+    width: 90px;
+    border-radius: 100%;
+    position: absolute;
+    top: 15px;
+    left: calc(36% - 50px);
+}
+
+.login-box .icon1 {
+    font-size: 95px;
+    position: absolute;
+    top: 15px;
+    left: calc(66% - 50px);
+    color: #14141c;
+}
+
+.login-box .icon2 {
+    font-size: 40px;
+    position: absolute;
+    top: 42px;
+    left: calc(58% - 50px);
+}
+
+.login-box h1 {
+    margin: 45px 0 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.login-box label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+
+.login-box input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.login-box input[type="text"], .login-box input[type="password"] {
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: black;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}
+
+.loginBtn {
+    text-align: center;
+    border: none;
+    outline: none;
+    height: 40px;
+    padding-top: 10px;
+    background: black;
+    color: #fff;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.registerBtn {
+    text-align: center;
+    border: none;
+    outline: none;
+    height: 40px;
+    padding-top: 10px;
+    background: black;
+    color: #fff;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.login-box a {
+    text-decoration: none;
+    margin-top: 20px;
+    font-family: "Poppins" , sans-serif;
+    color: #828282;
+}
+.login-box a:hover {
+    color: black;
+}
